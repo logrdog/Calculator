@@ -1,2 +1,2 @@
 # Little-Projects
-JUNK PROGRAMS
+JUNK PROGRAMS - school projects
