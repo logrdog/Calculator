@@ -14,12 +14,9 @@ import javax.swing.JPanel;
  * @author Logs
  */
 public class RenderScreen extends JPanel {
-    
-    
     @Override
     public void paint(Graphics g){
         super.paint(g);
-        
         Hockey.hockey.render((Graphics2D)g);
     }
 }

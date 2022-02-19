@@ -17,8 +17,6 @@ public class Goal {
     public int x, y, width=30, height=700;
     public int score;
     
-    private Hockey hockey;
-    
     public Goal(Hockey hockey, int goalNum){
         this.goalNum = goalNum;
         

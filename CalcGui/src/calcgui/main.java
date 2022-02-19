@@ -12,6 +12,5 @@ package calcgui;
 public class main {
     public static void main(String[] args){
         CalcStack start = new CalcStack();
-        
     }
 }

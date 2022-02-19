@@ -14,7 +14,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.Timer;
@@ -40,11 +39,7 @@ public class Hockey implements ActionListener, KeyListener {
     
     private boolean w, s, up, down;
     
-    private int gameState = 0, winning_score = 7, playerWon, botCooldown = 10, botMove=0;
-    
-    private int botMoves;
-    
-    private Random rand;
+    private int gameState = 0, winning_score = 7, playerWon;
     
     private JFrame frame;
     
@@ -56,9 +51,7 @@ public class Hockey implements ActionListener, KeyListener {
     
     public Hockey(){
         timer = new Timer(20, this);
-        
-        rand = new Random();
-        
+
         frame = new JFrame("Air Hockey");
         
         render = new RenderScreen();

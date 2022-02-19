@@ -24,8 +24,6 @@ public class Puck {
     
     private Hockey hockey;
     
-    private int amountHits;
-    
     public Puck(Hockey hockey){
         this.hockey = hockey;
         
@@ -35,7 +33,6 @@ public class Puck {
     }
     
     public void setPuck(){
-        this.amountHits = 0;
         this.x = (int)hockey.getWidth() / 2 - this.width / 2;
         this.y = (int)hockey.getHeight() / 2 - this.width / 2;
         
